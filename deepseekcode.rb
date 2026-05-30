@@ -5,21 +5,21 @@
 class Deepseekcode < Formula
   desc "Terminal-native coding agent for DeepSeek models."
   homepage "https://github.com/amemiya02/deepseekcode"
-  version "0.3.1"
+  version "0.3.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/amemiya02/deepseekcode/releases/download/v0.3.1/deepseekcode_0.3.1_darwin_amd64.tar.gz"
-      sha256 "e24dc044f2c798a2222607d200375f15c4e1ad46f4e8c87b6e52edaa108943c3"
+      url "https://github.com/amemiya02/deepseekcode/releases/download/v0.3.2/deepseekcode_0.3.2_darwin_amd64.tar.gz"
+      sha256 "7f0d4fb54699dee651c7e20bd60231517afc21126e4a6c53cbd7c0b35b9f8893"
 
       define_method(:install) do
         bin.install "dsc"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/amemiya02/deepseekcode/releases/download/v0.3.1/deepseekcode_0.3.1_darwin_arm64.tar.gz"
-      sha256 "741e3edd99f971c6865a7362f30df1017ddd815858dbd539cfa0a9eada281a50"
+      url "https://github.com/amemiya02/deepseekcode/releases/download/v0.3.2/deepseekcode_0.3.2_darwin_arm64.tar.gz"
+      sha256 "468b1018bb687141c42ecb1305ecfad916068c65984e3f4558615b635ffbf45e"
 
       define_method(:install) do
         bin.install "dsc"
@@ -29,15 +29,15 @@ class Deepseekcode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amemiya02/deepseekcode/releases/download/v0.3.1/deepseekcode_0.3.1_linux_amd64.tar.gz"
-      sha256 "eee88b3f13f6fe0c50b33d1c67b3b611ee9c92d160d7c5fa3f3a8ba1a2c41483"
+      url "https://github.com/amemiya02/deepseekcode/releases/download/v0.3.2/deepseekcode_0.3.2_linux_amd64.tar.gz"
+      sha256 "e1a1cc522e72007b443a51e4f8b7f7f167856ed64f6a921f9a3e4b1be59b77b8"
       define_method(:install) do
         bin.install "dsc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amemiya02/deepseekcode/releases/download/v0.3.1/deepseekcode_0.3.1_linux_arm64.tar.gz"
-      sha256 "076bdcd1661570c861684d602b4c46e2a400fc7bb166b2e4a8fb276f6242b2bb"
+      url "https://github.com/amemiya02/deepseekcode/releases/download/v0.3.2/deepseekcode_0.3.2_linux_arm64.tar.gz"
+      sha256 "ce36e2967e9bf9242608ca0daf099a805e3afd0ad5770079fb18d5315ed45566"
       define_method(:install) do
         bin.install "dsc"
       end
