@@ -11,7 +11,7 @@ class Deepseekcode < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/amemiya02/deepseekcode/releases/download/v0.4.0/deepseekcode_0.4.0_darwin_amd64.tar.gz"
-      sha256 "28b6e6f55541fac68a7988a97be2d5a644961f28e2ed54473979dbd00e5c2bf5"
+      sha256 "67258e9c441f547eadef67def2f2a38c4555362ded3eee8849c7b90dfa7f0565"
 
       define_method(:install) do
         bin.install "dsc"
@@ -19,7 +19,7 @@ class Deepseekcode < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/amemiya02/deepseekcode/releases/download/v0.4.0/deepseekcode_0.4.0_darwin_arm64.tar.gz"
-      sha256 "58b23a3ec8aae1c2fe55d2c4d2675035879a48489aab9283ac8b1181a7e1b3df"
+      sha256 "e5580c67cb7ab7d696504f901162e196675965adbd09aff909c1cb54003bef61"
 
       define_method(:install) do
         bin.install "dsc"
@@ -30,14 +30,14 @@ class Deepseekcode < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/amemiya02/deepseekcode/releases/download/v0.4.0/deepseekcode_0.4.0_linux_amd64.tar.gz"
-      sha256 "1f38cb311ca8c9b9351639d2fdbdfc2a0a73497d2016c56b60bc487791a09f23"
+      sha256 "de6a4186d53f1df441f10c3bebc1f6d06de223aae5024668bfabac9232771140"
       define_method(:install) do
         bin.install "dsc"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/amemiya02/deepseekcode/releases/download/v0.4.0/deepseekcode_0.4.0_linux_arm64.tar.gz"
-      sha256 "a3e1a0af774c9367033d240a50dcd575ca102b8f8cabb96e9d1cf2192e369205"
+      sha256 "14d32ce5c4ceaad515b5c400f4e4a5504c978e11d29c2402e7bd16aa9f1e6816"
       define_method(:install) do
         bin.install "dsc"
       end
